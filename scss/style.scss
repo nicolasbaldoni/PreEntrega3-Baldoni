@@ -1,0 +1,76 @@
+/* Import de la font de google */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;300;400&family=Roboto:ital,wght@1,100&display=swap');
+
+//Imports
+@import "utilities/variables.scss";
+@import "utilities/mixin.scss";
+
+
+
+body {
+    /*Color de fondo principal*/
+    background: $bg-color-principal;
+    font-family: 'Poppins', sans-serif;
+    header {
+        nav {
+            background-color: $bg-color-nav;
+        }
+    }
+
+    main {
+        #carouselExampleFade {
+            /* Agrega un efecto al carrusel */
+            clip-path: polygon(0 0, 100% 0, 100% 88%, 50% 100%, 0 88%);
+        }
+
+        #Quienes_somos {
+            h2 {
+                // Agrega el estilo a los titulos H2
+                // @param1: padding-top 
+                // @param2: padding-bottom
+                @include titleStyle(8%, 2%);
+            }
+            p {
+                // Agrega el estilo a los parrafos
+                // @param1: padding top & bottom
+                // @param2: padding left & right
+                @include parrafoStyle(0%, 2%);
+            }
+            div{
+                padding: 0% 2%;
+            }
+        }
+
+        #Productos {
+            h2 {
+                // Agrega el estilo a los titulos H2
+                // @param1: padding-top 
+                // @param2: padding-bottom
+                @include titleStyle(8%, 3%);
+            }
+            .card-img-top {
+                width: 100%;
+                height: 100%;
+                object-fit: cover;
+            }
+        }
+
+        #Medio_ambiente{
+            h2 {
+                @include titleStyle (8%, 4%)
+            }
+        }
+
+    }
+}
+
+/* Muestra u oculta el texto con el btn Leer más */
+.hide {
+    display: none;
+}
+
+.show {
+    display: block;
+}
+
+/* Fin de mostrar u ocultar texto */

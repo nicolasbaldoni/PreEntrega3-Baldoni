@@ -1,0 +1,18 @@
+// Fuente de google
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans:wght@500;700;800&family=Poppins:wght@100;300;400&family=Roboto:ital,wght@1,100&display=swap');
+
+@mixin titleStyle ($padding-top, $padding-bottom) {
+    padding-top: $padding-top;
+    padding-bottom: $padding-bottom;
+    padding-left: 0%;
+    padding-right: 0%;
+    font-family: 'Noto Sans', sans-serif;
+    text-align: center;
+    font-weight: 800;
+}
+
+@mixin parrafoStyle($padding-top-bottom, $padding-left-right){
+    padding: $padding-top-bottom $padding-left-right;
+    font-family: 'Poppins', sans-serif;
+    text-align: justify;
+}

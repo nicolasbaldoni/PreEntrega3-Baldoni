@@ -1,0 +1,411 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+
+    <!-- CSS Boostrap via CDN-->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+
+    <!-- Animate Scroll-->
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+
+    <!-- JS Materialize -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+
+    <!-- CSS -->
+    <link rel="stylesheet" href="css/styles.css">
+
+    <title>Aluar</title>
+</head>
+
+<body>
+
+    <header>
+        <!-- Menu Boostrap-->
+        <nav class="navbar navbar-expand-sm bg-body-tertiary" data-bs-theme="light">
+            <div class="container-fluid">
+                <a class="navbar-brand" href="#">
+                    <img src="img/aluar-logo.png" alt="Empresa Aluar - Logo" width="80">
+                </a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas"
+                    data-bs-target="#offcanvasNavbar" aria-controls="offcanvasNavbar" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasNavbar"
+                    aria-labelledby="offcanvasNavbarLabel">
+                    <div class="offcanvas-header">
+                        <h5 class="offcanvas-title" id="offcanvasNavbarLabel">Menu</h5>
+                        <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+                    </div>
+                    <div class="offcanvas-body">
+                        <ul class="navbar-nav justify-content-end flex-grow-1 pe-3">
+                            <li class="nav-item">
+                                <a class="nav-link active" aria-current="page" href="#">Inicio</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link active" aria-current="page" href="#Quienes_somos">Quiénes somos</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link active" aria-current="page" href="#Productos">Productos</a>
+                            </li>
+                            <li class="nav-item dropdown">
+                                <a class="nav-link dropdown-toggle" href="#Medio_ambiente" role="button"
+                                    data-bs-toggle="dropdown" aria-expanded="false">
+                                    Medio Ambiente
+                                </a>
+                                <ul class="dropdown-menu">
+                                    <li><a class="dropdown-item" href="#Emisiones">Emisiones de gases</a></li>
+                                    <li><a class="dropdown-item" href="#Monitoreo_aire">Calidad del aire</a></li>
+                                    <li><a class="dropdown-item" href="#Gestión_agua">Tratamiento de residuos</a></li>
+                                </ul>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link active" aria-current="page" href="#Contacto">Contacto</a>
+                            </li>
+                        </ul>
+
+                    </div>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <main>
+        <section id="Home">
+            <div id="carouselExampleFade" class="carousel slide carousel-fade" data-bs-ride="carousel">
+                <div class="carousel-inner">
+                    <div class="carousel-item active">
+                        <img src="img/aluar-empresa.png" class="d-block w-100"
+                            alt="Empresa Aluar División Primario, Puerto Madryn, Chubut" data-bs-interval="10000">
+                    </div>
+                    <div class="carousel-item">
+                        <img src="img/aluar_empresa_02.png" class="d-block w-100"
+                            alt="Aluar Primario - producción - lingotes - transporte de aluminio"
+                            data-bs-interval="5000">
+                    </div>
+                </div>
+                <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleFade"
+                    data-bs-slide="prev">
+                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                    <span class="visually-hidden">Previous</span>
+                </button>
+                <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleFade"
+                    data-bs-slide="next">
+                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                    <span class="visually-hidden">Next</span>
+                </button>
+            </div>
+        </section>
+
+        <!-- El estilo de los parrafos y fuentes se daran conforme avance el proyecto -->
+        <section id="Quienes_somos">
+            <h2>Quiénes somos</h2>
+            <p>Aluar es una compañía de capitales nacionales gestionada de acuerdo a los más exigentes parámetros
+                internacionales de la industria y en permanente evolución. Desde sus inicios triplicó la capacidad de
+                producción de aluminio de 140.000tn gracias a un constante plan de inversiones, lo que le permite hoy
+                abastecer completamente el mercado local con aproximadamente el 30% de su volumen producido, exportando
+                el otro 70% a países como Estados Unidos, Brasil, Japón y Alemania, entre otros.
+                <br>
+                En la División Primario se materializa la mayor parte de las operaciones de Aluar, con una capacidad de
+                producción de aluminio primario de 460.000tn anuales en su planta de Puerto Madryn. Allí se producen
+                placas,
+                lingotes, barrotes, alambrón y aleaciones de aluminio para abastecer a las más diversas industrias,
+                construcción, automotriz, packaging, líneas de transmisión de energía, entre otras.
+                <br>
+            </p>
+            <span class="hide" id="hideText">
+                <p>
+                    La División Elaborados representa el siguiente eslabón en la cadena productiva, que posibilita
+                    que el
+                    aluminio puro sea transformado en extruidos y en laminados que proveen a un gran número de
+                    industrias,
+                    desde
+                    las fachadas de edificios hasta los packagings de alimentos comestibles. Estos productos con
+                    alto valor
+                    agregado son fabricados en la planta situada en la localidad de Abasto, provincia de Buenos
+                    Aires, que
+                    cuenta con una capacidad de producción de 35.000 toneladas anuales.
+                    <br>
+                    A lo largo de sus 40 años de vida, Aluar mantuvo firme su visión e identidad histórica,
+                    expandiendo sus
+                    actividades hasta lograr un elevado grado de integración vertical en la cadena de producción y
+                    comercialización del aluminio, tanto aguas abajo con la producción de extruidos y laminados como
+                    aguas
+                    arriba en la producción y transporte de energía eléctrica, mediante la adquisición de la
+                    concesión sobre
+                    Hidroeléctrica Futaleufú – generadora de energía eléctrica - y con la participación en la
+                    transportadora
+                    de
+                    energía eléctrica en alta tensión Transpa S.A.
+                    <br>
+                    La Empresa continuó diversificando sus actividades productivas y comerciales y en el año 2002
+                    adquirió
+                    INFA
+                    S.A. una empresa especializada en la ejecución de soluciones integrales para proyectos de
+                    ingeniería,
+                    fabricación, construcción, montajes y servicios industriales.
+                </p>
+            </span>
+            <div class="d-grid col-3 mx-auto">
+                <button id="btnHideText" type="button" class="btn btn-outline-primary">Leer más</button>
+            </div>
+
+        </section>
+
+
+        <section id="Productos">
+            <h2 data-aos="fade-up">Productos</h2>
+            <!-- Se utiliza las card de Boostrap -->
+            <!-- Las mismas estan en 3 columnas por fila y se adapta a la pantalla -->
+            <div class="container">
+                <div class="row row-cols-1 row-cols-md-3 g-4">
+                    <div class="col">
+                        <div class="card h-100" data-aos="fade-right">
+                            <img src="img/aluar_bobina_alambron.jpg" class="card-img-top"
+                                alt="Bobina de alambron - El alambrón de Aluminio se produce en un sistema de colada y laminación continua de alambrón.">
+                            <div class="card-body">
+                                <h5 class="card-title">Alambron</h5>
+                                <p class="card-text">El alambrón de Aluminio se produce en un sistema de colada y
+                                    laminación
+                                    continua de alambrón.
+                                    Este producto tiene una alta demanda en la industria de los conductores eléctricos y
+                                    cables, y
+                                    para
+                                    su uso en líneas de transmisión y distribución de electricidad, debido a sus buenas
+                                    propiedades
+                                    de
+                                    conductividad eléctrica, resistencia mecánica y el peso reducido comparado con el
+                                    cobre.
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col">
+                        <div class="card h-100" data-aos="fade-down">
+                            <img src="img/aluar_barrotes.jpg" class="card-img-top"
+                                alt="Aluar - Barratos - Aluminio - Los barrotes de Aluar se producen por colada semicontínua vertical">
+                            <div class="card-body">
+                                <h5 class="card-title">Barrotes</h5>
+                                <p class="card-text">Los barrotes de Aluar se producen por colada semicontínua vertical
+                                    (Wagstaff Air Slip). El 100%
+                                    de
+                                    los barrotes son inspeccionados por ultrasonido para la detección de fisuras e
+                                    inclusiones.
+                                    Los barrotes de serie 6xxx son homogeneizados.
+                                    Este producto se obtiene exclusivamente a partir de Aluminio primario.
+                                    Aluar provee una variedad de aleaciones estándar (principalmente series 6000 y 1000)
+                                    utilizadas
+                                    en
+                                    la construcción, el transporte y la industria electrónica.
+                                    Este producto responde a las normas internacionales ISO, EN y otras.</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col">
+                        <div class="card h-100" data-aos="fade-left">
+                            <img src="img/aluar_lingotes.png" class="card-img-top" alt="Aluar - Lingotes - Los lingotes de Aluminio puro para refusión de Aluar son producidos exclusivamente a partir de
+                        Aluminio primario (bajo contenido de impurezas), utilizando parámetros de proceso controlados
+                        para alcanzar una calidad óptima y una mínima pérdida de metal en el proceso de refusión
+                        posterior.">
+                            <div class="card-body">
+                                <h5 class="card-title">Lingotes</h5>
+                                <p class="card-text">Los lingotes de Aluminio puro para refusión de Aluar son producidos
+                                    exclusivamente a partir de
+                                    Aluminio primario (bajo contenido de impurezas), utilizando parámetros de proceso
+                                    controlados
+                                    para alcanzar una calidad óptima y una mínima pérdida de metal en el proceso de
+                                    refusión
+                                    posterior.
+                                    Aluar ofrece este producto en formatos de lingote de molde abierto y lingotes
+                                    producidos
+                                    por
+                                    colada contínua horizontal ( Lingote T).
+                                    Este producto se utiliza en la fabricación de menaje, envases, transporte,
+                                    construcción,
+                                    entre
+                                    otras aplicaciones.</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col">
+                        <div class="card h-100" data-aos="fade-right">
+                            <img src="img/aluar_placas_laminación.jpg" class="card-img-top" alt="Aluar - Placas para Laminación - Las placas para deformación plástica por laminación se producen por colada semi-contínua
+                        vertical en una variedad de aleaciones y dimensiones, utilizando exclusivamente Aluminio
+                        primario.">
+                            <div class="card-body">
+                                <h5 class="card-title">Placas para laminación</h5>
+                                <p class="card-text">Las placas para deformación plástica por laminación se producen por
+                                    colada semi-contínua
+                                    vertical en una variedad de aleaciones y dimensiones, utilizando exclusivamente
+                                    Aluminio
+                                    primario.
+                                    Este producto es utilizado en la producción de laminados principalmente en la
+                                    industria
+                                    de la
+                                    construcción, automotriz, menaje y embalaje.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="Medio_ambiente">
+            <h2>Medio Ambiente</h2>
+            <section id="Emisiones">
+                <h3>Gestión de Emisiones de gases de efecto invernadero</h3>
+                <img src="img/Gestión_de_Emisiones_de_gases_de_efecto_invernadero.jpg"
+                    alt="Aluar - Gestión de emisiones de gases de efecto invernadero">
+                <p>
+                    A fin de contribuir con las obligaciones de la Argentina respecto de la reducción de gases con
+                    potencial efecto invernadero (Acuerdo de París (dic2015) aprobado por Ley 27270), en Aluar
+                    realizamos la siguientes acciones, con el fin de contribuir con los esfuerzos globales y nacionales
+                    orientados a minimizar los efectos del cambio climático:
+                <ul>
+                    <li>
+                        Producimos el aluminio líquido con tecnología Pre-baked en la electrólisis, con celdas
+                        electrolíticas cerradas que maximiza el aprovechamiento de la energía.
+                    </li>
+                    <li>
+                        Controlamos la ocurrencia de “efecto anódico” en las cubas de electrólisis, a través de un
+                        sistema de monitoreo automático que reduce activamente la ocurrencia de dicho fenómeno, evitando
+                        la producción de CF4 (tetrafluoruro de carbono).
+                    </li>
+                    <li>
+                        Priorizamos la generación de energía a través de ciclos combinados, re-utilizando los gases de
+                        combustión que emiten las turbinas de gas para alimentar turbinas de vapor. En consecuencia se
+                        evita parte de la emisión de CO2 libre a la atmósfera.
+                    </li>
+                </ul>
+                </p>
+
+            </section>
+            <section id="Monitoreo_aire">
+                <h3>Monitoreo de la calidad del aire en la ciudad</h3>
+                <img src="img/calidad_del_aire.jpg" alt="Aluar - Calidad del aire">
+                <p>
+                    A fin de verificar la eficacia de los dispositivos e instalaciones de captación y tratamiento de los
+                    efluentes gaseosos, operamos una red de monitoreo de la calidad del aire, orientada a evaluar el
+                    impacto de las emisiones de fluoruros en distintos puntos del ejido municipal.
+                </p>
+            </section>
+            <section id="Gestión_agua">
+                <h3>Tratamiento de residuos sólidos y efluentes</h3>
+                <img src="img/aluar_residuos.jpg" alt="Aluar - Manejo de los residuos">
+                <p>
+                    Los residuos sólidos, previa clasificación, se reciclan durante el proceso (ánodos, baño
+                    electroquímico), se reutilizan (maderas, cartones, papel, plásticos, metales) o se disponen en un
+                    relleno de seguridad (materiales peligrosos), según corresponda. El correcto funcionamiento de los
+                    rellenos de seguridad se controla a través de una red de perforaciones ubicada estratégicamente, que
+                    permite monitorear la calidad del agua subterránea.
+                    El tratamiento de los efluentes gaseosos se realiza utilizando procedimientos secos. Se utilizan
+                    materiales sólidos granulados para retener las sustancias peligrosas (fluoruro de hidrógeno e
+                    hidrocarburos aromáticos) que contienen los efluentes gaseosos de los distintos procesos que
+                    requiere la producción de aluminio. La particularidad de esta industria es que los sólidos
+                    granulados empleados en el tratamiento de efluentes gaseosos son la alúmina y el coque de petróleo.
+                    Ambas son materias primas principales para la producción de aluminio y el fluoruro de hidrógeno y
+                    los hidrocarburos, se aprovechan en los procesos productivos a los que reingresan. Es decir, el
+                    tratamiento de gases protege el ambiente y es eficiente desde el punto de vista económico dado que
+                    minimiza los requerimientos de insumos que de otra forma deberían agregarse externamente.
+                </p>
+            </section>
+        </section>
+
+        <section id="Contacto">
+            <h2>Contacto</h2>
+            <!-- Uso la etiqueta <br> para salto de linea hasta aplicar lo
+            visto en la clase 03 -->
+            <label for="email">Email</label><br>
+            <input type="text" name="email"><br><br>
+            <label for="mensaje">Mensaje</label><br>
+            <textarea name="mensaje" cols="30" rows="10"></textarea>
+
+        </section>
+
+    </main>
+
+    
+
+    <!-- Footer - Parte del cuerpo del html -->
+    <footer>
+        <div>
+            <hr>
+            <!-- Reemplazar esta tabla dandonle el estilo visto en las clases siguientes -->
+            <table>
+                <tr>
+                    <td>
+                        <div>
+                            <ul class="nav-footer">
+                                <li><a href="#Home">Home</a></li>
+                                <li><a href="#Quienes_somos">Quiénes somos</a></li>
+                                <li><a href="#Productos">Productos</a></li>
+                            </ul>
+                        </div>
+                    </td>
+                    <td>
+                        <div>
+                            <ul class="nav-footer">
+                                <li><a href="#Medio_ambiente">Medio Ambiente</a></li>
+                                <ul>
+                                    <li><a href="#Emisiones">Gestión de Emisiones de gases de efecto invernadero</a>
+                                    </li>
+                                    <li><a href="#Monitoreo_aire">Monitoreo de la calidad del aire en la ciudad</a></li>
+                                    <li><a href="#Gestión_agua">Tratamiento de residuos sólidos y efluentes</a></li>
+                                </ul>
+                            </ul>
+                        </div>
+                    </td>
+                    <td>
+                        <div>
+                            <ul class="nav-footer">
+                                <li><a href="#Contacto">Contacto</a></li>
+                            </ul>
+                        </div>
+                    </td>
+                </tr>
+            </table>
+        </div>
+        <div class="txt-center">
+            <p>@Aluar todos los derechos reservados</p>
+        </div>
+    </footer>
+
+    <!-- JS de Boostrap via CDN -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
+        crossorigin="anonymous"></script>
+
+    <!-- JS Animate Scroll -->
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    
+
+    <!-- Inicializo los efectos de la libreria Animate Scroll-->
+    <script>
+        AOS.init();
+    </script>
+
+    <script>
+        let btnHideText = document.getElementById('btnHideText');
+        let hideText = document.getElementById('hideText');
+
+        btnHideText.addEventListener('click', toggleText);
+
+        function toggleText() {
+            hideText.classList.toggle('show');
+
+            if (hideText.classList.contains('show')) {
+                btnHideText.innerHTML = 'Leer menos'
+            } else {
+                btnHideText.innerHTML = 'Leer más'
+            }
+        }
+    </script>
+
+</body>
+
+
+</html>
