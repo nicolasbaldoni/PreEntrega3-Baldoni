@@ -98,7 +98,8 @@ body {
                     .container {
                         align-items: center;
                         padding-bottom: 5%;
-                        .card{
+
+                        .card {
                             .card-body {
                                 background-color: $bg-color-principal;
                             }
@@ -139,7 +140,7 @@ body {
                 }
             }
 
-            #Tratamiento_residuos{
+            #Tratamiento_residuos {
                 .parallax {
                     @include parallax();
                 }
@@ -170,29 +171,51 @@ body {
             }
         }
 
+        #Aplicaciones {
 
+            margin-bottom: 5%;
+
+            h2 {
+                // Agrega el estilo a los titulos H2
+                // @param1: padding-top 
+                // @param2: padding-bottom
+                @include titleStyle(5%, 3%);
+            }
+            /* Las imagenes dentro del las card todas seran adaptativas 
+               al espacio del card */
+            div {
+                img {
+                    width: 100%;
+                    height: 100%;
+                    object-fit: cover;
+                }
+            }
+        }
 
 
     }
 
-    footer{
-        div{            
-            div{
-                div{
-                    p{
+    footer {
+        div {
+            div {
+                div {
+                    p {
                         padding-top: 0;
                         font-style: normal;
                         opacity: 100%;
-                        a{
+
+                        a {
                             text-decoration: none;
                         }
-                        i{
+
+                        i {
                             padding-right: 2%;
                         }
                     }
                 }
             }
-            p{
+
+            p {
                 padding-top: 3%;
                 font-style: italic;
                 text-align: center;

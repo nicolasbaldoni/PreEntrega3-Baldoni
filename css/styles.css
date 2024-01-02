@@ -116,6 +116,22 @@ body {
     padding: 2% 3%;
     font-family: 'Poppins', sans-serif;
     text-align: justify; }
+  body main #Aplicaciones {
+    margin-bottom: 5%;
+    /* Las imagenes dentro del las card todas seran adaptativas 
+               al espacio del card */ }
+    body main #Aplicaciones h2 {
+      padding-top: 5%;
+      padding-bottom: 3%;
+      padding-left: 0%;
+      padding-right: 0%;
+      font-family: 'Noto Sans', sans-serif;
+      text-align: center;
+      font-weight: 800; }
+    body main #Aplicaciones div img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover; }
   body footer div div div p {
     padding-top: 0;
     font-style: normal;
