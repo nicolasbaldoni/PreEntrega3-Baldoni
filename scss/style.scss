@@ -11,6 +11,7 @@ body {
     /*Color de fondo principal*/
     background: $bg-color-principal;
     font-family: 'Poppins', sans-serif;
+
     header {
         nav {
             background-color: $bg-color-nav;
@@ -30,13 +31,15 @@ body {
                 // @param2: padding-bottom
                 @include titleStyle(8%, 2%);
             }
+
             p {
                 // Agrega el estilo a los parrafos
                 // @param1: padding top & bottom
                 // @param2: padding left & right
-                @include parrafoStyle(0%, 2%);
+                @include textStyle(0%, 2%);
             }
-            div{
+
+            div {
                 padding: 0% 2%;
             }
         }
@@ -48,6 +51,7 @@ body {
                 // @param2: padding-bottom
                 @include titleStyle(8%, 3%);
             }
+
             .card-img-top {
                 width: 100%;
                 height: 100%;
@@ -55,12 +59,146 @@ body {
             }
         }
 
-        #Medio_ambiente{
+        #Medio_ambiente {
             h2 {
-                @include titleStyle (8%, 4%)
+                // Agrega el estilo a los titulos H2
+                // @param1: padding-top 
+                // @param2: padding-bottom
+                @include titleStyle(8%, 3%);
+            }
+
+            #Emisiones {
+                .parallax {
+                    @include parallax();
+                }
+
+                .img_emisiones {
+                    background-image: url("../img/Gestión_de_Emisiones_de_gases_de_efecto_invernadero.jpg");
+                }
+
+                div {
+                    h3 {
+                        // Agrega el estilo a los titulos H3
+                        // @param1: padding-top 
+                        // @param2: padding-bottom
+                        @include titleStyle(250px, 0);
+                        font-size: 3em;
+                        color: whitesmoke;
+                    }
+                }
+
+                section {
+                    p {
+                        // Agrega el estilo a los parrafos
+                        // @param1: padding top & bottom
+                        // @param2: padding left & right
+                        @include textStyle(2%, 3%);
+                    }
+
+                    .container {
+                        align-items: center;
+                        padding-bottom: 5%;
+                        .card{
+                            .card-body {
+                                background-color: $bg-color-principal;
+                            }
+                        }
+                    }
+
+                }
+
+            }
+
+            #Monitoreo_aire {
+                .parallax {
+                    @include parallax();
+                }
+
+                .img_calidad {
+                    background-image: url("../img/calidad_del_aire.jpeg");
+                }
+
+                div {
+                    h3 {
+                        // Agrega el estilo a los titulos H3
+                        // @param1: padding-top 
+                        // @param2: padding-bottom
+                        @include titleStyle(250px, 0);
+                        font-size: 3em;
+                        color: whitesmoke;
+                    }
+                }
+
+                section {
+                    p {
+                        // Agrega el estilo a los parrafos
+                        // @param1: padding top & bottom
+                        // @param2: padding left & right
+                        @include textStyle(2%, 3%);
+                    }
+                }
+            }
+
+            #Tratamiento_residuos{
+                .parallax {
+                    @include parallax();
+                }
+
+                .img_tratamiento {
+                    background-image: url("../img/aluar_residuos.jpg");
+                }
+
+                div {
+                    h3 {
+                        // Agrega el estilo a los titulos H3
+                        // @param1: padding-top 
+                        // @param2: padding-bottom
+                        @include titleStyle(250px, 0);
+                        font-size: 3em;
+                        color: whitesmoke;
+                    }
+                }
+
+                section {
+                    p {
+                        // Agrega el estilo a los parrafos
+                        // @param1: padding top & bottom
+                        // @param2: padding left & right
+                        @include textStyle(2%, 3%);
+                    }
+                }
             }
         }
 
+
+
+
+    }
+
+    footer{
+        div{            
+            div{
+                div{
+                    p{
+                        padding-top: 0;
+                        font-style: normal;
+                        opacity: 100%;
+                        a{
+                            text-decoration: none;
+                        }
+                        i{
+                            padding-right: 2%;
+                        }
+                    }
+                }
+            }
+            p{
+                padding-top: 3%;
+                font-style: italic;
+                text-align: center;
+                opacity: 50%;
+            }
+        }
     }
 }
 

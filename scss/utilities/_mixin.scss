@@ -11,8 +11,16 @@
     font-weight: 800;
 }
 
-@mixin parrafoStyle($padding-top-bottom, $padding-left-right){
+@mixin textStyle($padding-top-bottom, $padding-left-right){
     padding: $padding-top-bottom $padding-left-right;
     font-family: 'Poppins', sans-serif;
     text-align: justify;
+}
+
+@mixin parallax() {
+    height: 600px;
+    background-position: 50% 50%;
+    background-repeat: no-repeat;
+    background-size: cover;   
+    background-attachment: fixed;
 }

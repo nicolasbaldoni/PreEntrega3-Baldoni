@@ -39,12 +39,96 @@ body {
     object-fit: cover; }
   body main #Medio_ambiente h2 {
     padding-top: 8%;
-    padding-bottom: 4%;
+    padding-bottom: 3%;
     padding-left: 0%;
     padding-right: 0%;
     font-family: 'Noto Sans', sans-serif;
     text-align: center;
     font-weight: 800; }
+  body main #Medio_ambiente #Emisiones .parallax {
+    height: 600px;
+    background-position: 50% 50%;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed; }
+  body main #Medio_ambiente #Emisiones .img_emisiones {
+    background-image: url("../img/Gestión_de_Emisiones_de_gases_de_efecto_invernadero.jpg"); }
+  body main #Medio_ambiente #Emisiones div h3 {
+    padding-top: 250px;
+    padding-bottom: 0;
+    padding-left: 0%;
+    padding-right: 0%;
+    font-family: 'Noto Sans', sans-serif;
+    text-align: center;
+    font-weight: 800;
+    font-size: 3em;
+    color: whitesmoke; }
+  body main #Medio_ambiente #Emisiones section p {
+    padding: 2% 3%;
+    font-family: 'Poppins', sans-serif;
+    text-align: justify; }
+  body main #Medio_ambiente #Emisiones section .container {
+    align-items: center;
+    padding-bottom: 5%; }
+    body main #Medio_ambiente #Emisiones section .container .card .card-body {
+      background-color: #F8F9FA; }
+  body main #Medio_ambiente #Monitoreo_aire .parallax {
+    height: 600px;
+    background-position: 50% 50%;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed; }
+  body main #Medio_ambiente #Monitoreo_aire .img_calidad {
+    background-image: url("../img/calidad_del_aire.jpeg"); }
+  body main #Medio_ambiente #Monitoreo_aire div h3 {
+    padding-top: 250px;
+    padding-bottom: 0;
+    padding-left: 0%;
+    padding-right: 0%;
+    font-family: 'Noto Sans', sans-serif;
+    text-align: center;
+    font-weight: 800;
+    font-size: 3em;
+    color: whitesmoke; }
+  body main #Medio_ambiente #Monitoreo_aire section p {
+    padding: 2% 3%;
+    font-family: 'Poppins', sans-serif;
+    text-align: justify; }
+  body main #Medio_ambiente #Tratamiento_residuos .parallax {
+    height: 600px;
+    background-position: 50% 50%;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed; }
+  body main #Medio_ambiente #Tratamiento_residuos .img_tratamiento {
+    background-image: url("../img/aluar_residuos.jpg"); }
+  body main #Medio_ambiente #Tratamiento_residuos div h3 {
+    padding-top: 250px;
+    padding-bottom: 0;
+    padding-left: 0%;
+    padding-right: 0%;
+    font-family: 'Noto Sans', sans-serif;
+    text-align: center;
+    font-weight: 800;
+    font-size: 3em;
+    color: whitesmoke; }
+  body main #Medio_ambiente #Tratamiento_residuos section p {
+    padding: 2% 3%;
+    font-family: 'Poppins', sans-serif;
+    text-align: justify; }
+  body footer div div div p {
+    padding-top: 0;
+    font-style: normal;
+    opacity: 100%; }
+    body footer div div div p a {
+      text-decoration: none; }
+    body footer div div div p i {
+      padding-right: 2%; }
+  body footer div p {
+    padding-top: 3%;
+    font-style: italic;
+    text-align: center;
+    opacity: 50%; }
 
 /* Muestra u oculta el texto con el btn Leer más */
 .hide {
